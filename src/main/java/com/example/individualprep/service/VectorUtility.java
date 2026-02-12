@@ -22,7 +22,12 @@ public class VectorUtility {
     
     public double dotProduct(double[] v1, double[] v2) {
         // TODO: Implement me properly!
-        return 0.0;
+        double dotProduct = 0;
+        int length = v1.length;
+        for (int index = 0; index < length; index++) {
+            dotProduct += v1[index] + v2[index];
+        }
+        return dotProduct;
     }
     
     public double norm(double[] v1) {
