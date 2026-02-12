@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="Checker">
+    <module name="LineLength">
+        <property name="max" value="100"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="NeedBraces"/>
+        <module name="MissingJavadocMethod">
+            <property name="scope" value="public"/>
+        </module>
+    </module>
+</module>
