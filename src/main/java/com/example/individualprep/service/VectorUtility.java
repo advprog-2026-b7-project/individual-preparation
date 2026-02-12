@@ -21,7 +21,6 @@ public class VectorUtility {
     }
     
     public double dotProduct(double[] v1, double[] v2) {
-        // TODO: Implement me properly!
         double dotProduct = 0;
         int length = v1.length;
         for (int index = 0; index < length; index++) {
