@@ -14,8 +14,11 @@ public class VectorUtility {
     }
 
     public double[] subtract(double[] v1, double[] v2) {
-        // TODO: Implement me properly!
-        return new double[] { 0.0, 0.0, 0.0 };
+        double[] result = new double[v1.length];
+        for (int i = 0; i < v1.length; i++) {
+            result[i] = v1[i] - v2[i];
+        }
+        return result;
     }
 
     public double[] multiply(double[] v1, int x) {
@@ -24,12 +27,19 @@ public class VectorUtility {
     }
     
     public double dotProduct(double[] v1, double[] v2) {
-        // TODO: Implement me properly!
-        return 0.0;
+        double dotProduct = 0;
+        int length = v1.length;
+        for (int index = 0; index < length; index++) {
+            dotProduct += v1[index] + v2[index];
+        }
+        return dotProduct;
     }
     
     public double norm(double[] v1) {
-        // TODO: Implement me properly!
-        return 0.0;
+        double sum = 0.0;
+        for(double val : v1){
+            sum += val * val;
+        }
+        return Math.sqrt(sum);
     }
 }
