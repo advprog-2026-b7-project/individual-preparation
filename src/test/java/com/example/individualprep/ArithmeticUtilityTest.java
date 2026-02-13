@@ -10,4 +10,10 @@ class ArithmeticUtilityTest {
         ArithmeticUtility util = new ArithmeticUtility();
         assertEquals(5.5, util.add(2.0, 3.5), 0.0001);
     }
+
+    @Test
+    void testDivision(){
+        ArithmeticUtility util = new ArithmeticUtility();
+        assertEquals(2.5, util.divide(5.0, 2.0), 0.0001);
+    }
 }
