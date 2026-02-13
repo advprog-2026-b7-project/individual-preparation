@@ -36,7 +36,7 @@ public class VectorUtility {
         double dotProduct = 0;
         int length = v1.length;
         for (int index = 0; index < length; index++) {
-            dotProduct += v1[index] + v2[index];
+            dotProduct += v1[index] * v2[index];
         }
         return dotProduct;
     }
