@@ -26,4 +26,11 @@ class ArithmeticUtilityTest {
         ArithmeticUtility util = new ArithmeticUtility();
         assertEquals(-1.5, util.subtract(2.0, 3.5), 0.0001);
     }
+
+    @Test
+    void testExponent(){
+        ArithmeticUtility util = new ArithmeticUtility();
+        assertEquals(4.0, util.exponent(2.0,2), 0.0001);
+        assertEquals(6.25, util.exponent(2.5,2), 0.0001);
+    }
 }
