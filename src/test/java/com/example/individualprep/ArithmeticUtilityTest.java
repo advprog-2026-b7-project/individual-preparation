@@ -16,4 +16,9 @@ class ArithmeticUtilityTest {
         ArithmeticUtility util = new ArithmeticUtility();
         assertEquals(2.5, util.divide(5.0, 2.0), 0.0001);
     }
+    @Test
+    void testMultiply(){
+        ArithmeticUtility util = new ArithmeticUtility();
+        assertEquals(42.0, util.multiply(6.0, 7.0), 0.001);
+    }
 }
