@@ -19,7 +19,7 @@ class VectorUtilityTest {
         double[] result = {12.0, 14.0};
         assertArrayEquals(result, util.multiply(input, 2));
     }
-}
+    @Test
     void testSubtract() {
         VectorUtility util = new VectorUtility();
         double[] v1 = {5.0, 7.0};
