@@ -6,6 +6,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VectorUtilityTest {
     @Test
+    void testAdd() {
+        VectorUtility util = new VectorUtility();
+        double[] v1 = {5.0, 7.0};
+        double[] v2 = {2.0, 3.0};
+        double[] result = util.add(v1, v2);
+        assertArrayEquals(new double[]{7.0, 10.0}, result, 0.0001);
+    }
+  
+    @Test
     void testNorm() {
         VectorUtility util = new VectorUtility();
         double[] v1 = {3.0, 4.0};
